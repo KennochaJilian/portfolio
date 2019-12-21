@@ -1,0 +1,50 @@
+*{
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.welcome{
+    width: 100vw;
+    height:100vh;
+    background-image: url("../../img/fond1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
+
+} 
+h1{
+    font-size: 70px !important;
+    font-weight:bold !important;
+    text-align: center !important;
+}
+h2{
+    font-size: 35px !important; 
+    font-weight:bold !important;
+    text-align: center !important;
+}
+
+
+.navBar{
+    /* position: fixed !important;  */
+    z-index:1;
+    background:transparent!important;
+    border-bottom: 2px solid;
+}
+
+.btnWelcome{
+    text-decoration: none;
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #631878;
+    border-radius: 27px;
+    border: none;  
+    
+   
+}
+
+
+.btnWelcome:hover{
+   
+    background-color: #e93578;
+}  
