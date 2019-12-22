@@ -91,3 +91,12 @@ h2{
     padding:100px; 
     width:100vw; 
 }
+#skills h2{
+    color: white; 
+}
+#skills hr{
+   background-color: white;
+}
+.skillsTable{
+    background-color: #631878;
+}
