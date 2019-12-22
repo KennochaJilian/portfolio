@@ -2,44 +2,66 @@
     $skillsTable=[
         [
         "title" => "Front-End",
-        "imgSRC" =>"Test", 
+        "imgSRC" =>[
+            "img/htmllogo.png",
+            "img/CSS3.png", 
+            "img/JS.png" 
+            ]
         ],
 
         [
             "title" => "Back-End",
-            "imgSRC" => "Test", 
+            "imgSRC" => [
+                "img/php.png",
+                "img/MySQL.png" 
+                ]
         ],
 
         [
             "title" => "Administration",
-            "imgSRC" => "Test", 
+            "imgSRC" => [
+                "img/git.png",
+                "img/office.jpg", 
+                "img/linux.png", 
+                ], 
         ],
 
         [
             "title" => "Divers",
-            "imgSRC" => "Test", 
+            "imgSRC" => [
+                "img/ruby.png",
+                "img/scrum.png", 
+                "img/visual.png" 
+                ] 
         ],
     ]
 
 
 ?>
-<section id="skills">
-    <div class=" row d-flex flex-column align-items-center">
+ 
+<section class="row" id="skills">
+    <div class=" d-flex flex-column align-items-center col-md-12">
         <div class="mb-5">
             <h2 class="category"> Mes Compétences </h2>
             <hr class="line">
         </div>
     </div>
-    <aside class="row">
+    <aside class="col-md-12 d-flex justify-content-around">
        
 
             <?php 
             foreach($skillsTable as $skill){ ?>
-            <div class="col-md-2 skillsTable">
+            <div class="col-xl-2 skillsTable">
                 <div>
                     <h3> <?= $skill['title']?></h3>
                 </div>
-                <div class="imgSkills"> <?=$skill['imgSRC']?></div>
+                <div class="divImgSkills"> 
+                    <?php
+                    foreach($skill['imgSRC'] as $imgSrc){ ?>
+                        <img class="imgSkill" src=<?=$imgSrc?>>
+
+                    <?php } ?>    
+                </div>
             </div>
             <?php
             }

@@ -63,7 +63,7 @@ h2{
 #about{
     background-color:rgba(233,53,120,0.9); 
     padding:100px; 
-    width:100vw;
+   
 
 
 }
@@ -88,8 +88,8 @@ h2{
 
 #skills{
     background-color:rgba(0,0,0,0.87); 
-    padding:100px; 
-    width:100vw; 
+    padding:100px 0px 100px 0px;
+  
 }
 #skills h2{
     color: white; 
@@ -99,4 +99,7 @@ h2{
 }
 .skillsTable{
     background-color: #631878;
+}
+.imgSkill{
+    width:5vw !important;
 }
