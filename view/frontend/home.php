@@ -6,6 +6,7 @@ $title = 'Codina Aranxa';
 require('navbar.php'); 
 require('welcome.php');
 require('aboutMe.php');
+require('skills.php');
 require('project.php');
 require('contactMe.php'); 
 
