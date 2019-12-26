@@ -27,7 +27,7 @@ $projectTable = [
         <p class="text-center"> Voici un aperçu des projets auxquels j'ai pu contribuer lors de mon apprentissage </p>
     </div>
 
-    <aside class="col-md-12">
+    <aside class="col-md-12 mb-5">
         <div class="row">
             <?php 
             foreach($projectTable as $project){ ?>
