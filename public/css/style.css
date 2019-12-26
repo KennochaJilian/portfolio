@@ -11,14 +11,18 @@
     background-position-x: center;
     
 
+}
+.welcome p{
+    font-size: 18px;
+    font-weight: bold;
 } 
 h1{
-    font-size: 70px !important;
+    font-size: 65px !important;
     font-weight:bold !important;
     text-align: center !important;
 }
 h2{
-    /* font-size: 35px !important;  */
+    font-size: 35px !important; 
     font-weight:bold !important;
     text-align: center !important;
 }
@@ -102,4 +106,37 @@ h2{
 }
 .imgSkill{
     width:5vw !important;
+}
+
+#project{
+    background-color:rgba(0,0,0,0.87); 
+    
+    color:white;
+  
+}
+#project hr{
+    background-color: white;
+}
+#test{
+    
+    width:100%; 
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;  
+}
+#test p{
+    margin:0; 
+    padding: 1vh; 
+}
+.projectTable{
+    background-color: #e93578;
+    padding-left:0 !important;
+    padding-right:0!important;
+    border-radius:35px;
+    border: 1px solid white; 
+}
+.projectTable img{
+    width:100%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    
 }

@@ -38,7 +38,7 @@
 
 
 ?>
- 
+
 <section class="row" id="skills">
     <div class=" d-flex flex-column align-items-center col-md-12">
         <div class="mb-5">
@@ -46,29 +46,28 @@
             <hr class="line">
         </div>
     </div>
-    <aside class="col-md-12 d-flex justify-content-around">
-       
-
-            <?php 
-            foreach($skillsTable as $skill){ ?>
-            <div class="col-xl-2 skillsTable">
-                <div>
-                    <h3> <?= $skill['title']?></h3>
-                </div>
-                <div class="divImgSkills"> 
-                    <?php
-                    foreach($skill['imgSRC'] as $imgSrc){ ?>
-                        <img class="imgSkill" src=<?=$imgSrc?>>
-
-                    <?php } ?>    
-                </div>
+    <aside class="col-md-12">
+        <div class="row">  
+        <?php 
+            foreach($skillsTable as $skill){ ?> 
+            <div class="col-xl-2 mx-auto col-sm-6 col-xs-12 skillsTable">
+            <div>
+                <h3> <?= $skill['title']?></h3>
             </div>
-            <?php
+            <div class="divImgSkills">
+                <?php
+                    foreach($skill['imgSRC'] as $imgSrc){ ?>
+                <img class="imgSkill" src=<?=$imgSrc?>>
+
+                <?php } ?>
+            </div>
+        </div>
+        <?php
             }
         ?>
 
-     
 
+        </div>
     </aside>
 
 </section>

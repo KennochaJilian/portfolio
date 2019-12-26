@@ -6,10 +6,11 @@
                 <h1>
         </div>
         <div>
-            <h2> Prête à partir à l'aventure et écrire ensemble une histoire partagée </p>
-            </h2>
+            <p> Prête à partir à l'aventure et écrire ensemble une histoire partagée </p>
+            </p>
         </div>
-        <div> <button class="btnWelcome"> C'est parti! </button> </div>
+        <div> <button class="btnWelcome btn-xl"> C'est parti ! </button> </div>
+
 
     </div>
 </div>
