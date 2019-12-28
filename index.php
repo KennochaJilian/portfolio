@@ -2,11 +2,9 @@
     require('controller/frontend.php'); 
 
     if (isset($_GET['action'])){
-        // if($_GET['action'] == 'launch'){
-        //     launched();   
-        // } elseif($_GET['action'] == 'planets'){
-        //     planets($_GET['name']);
-        // } 
+        if($_GET['action'] == 'newMsg'){
+            newMsg();   
+        }
     }else{
 
         home();

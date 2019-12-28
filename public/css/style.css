@@ -191,3 +191,18 @@ h2{
     color:#e93578; 
     
 }
+footer{
+    height:4vh;
+}
+.copyright{
+    font-size:10px; 
+}
+
+.msgSent{
+    width: 100vw;
+    height:96vh;
+    background-image: url("../../img/contact.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}

@@ -40,6 +40,7 @@
 ?>
 
 <section class="row" id="skills">
+<a name="skills"></a>
     <div class=" d-flex flex-column align-items-center col-md-12">
         <div class="mb-5">
             <h2 class="category"> Mes Compétences </h2>

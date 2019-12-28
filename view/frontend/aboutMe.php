@@ -1,4 +1,5 @@
 <section class="row d-flex flex-column align-items-center" id="about">
+<a name="a_propos"></a>
 
     <div class="mb-5">
         <h2 class="category"> À propos </h2>
