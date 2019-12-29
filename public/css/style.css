@@ -4,6 +4,36 @@
 html, body{
     scroll-behavior:smooth;
 }
+.navbar-default {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    z-index:1;
+    border-bottom: 2px solid;
+    background-color: transparent!important;
+    color: black!important; 
+}
+
+.navbar-default a{
+    color: rgb(53, 53, 53);    
+}
+.navbar-default a:hover{
+    color: black;    
+}
+.activeCustom{
+    color: #e93578!important;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    
+}
+.navBar a {
+    color: white;     
+}
+.navBar a:hover {
+    color:#e93578;     
+}
+
 
 .welcome{
     width: 100vw;
@@ -32,9 +62,10 @@ h2{
 
 
 .navBar{
-    z-index:1;
-    background:transparent!important;
-    border-bottom: 2px solid;
+    
+    background:black !important;
+    color: white; 
+    
 }
 
 .btnWelcome{

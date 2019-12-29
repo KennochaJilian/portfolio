@@ -1,3 +1,4 @@
+// NavBar links swipe to active/null
 const ratio = .6; 
 const spies = document.querySelectorAll('[data-spy]');
 
@@ -15,11 +16,11 @@ const activate = function (elem){
             return null
         }
     anchor.parentElement.parentElement
-        .querySelectorAll('.active')
+        .querySelectorAll('.activeCustom')
         .forEach(node => {console.log(node); 
-            node.classList.remove('active')})
+            node.classList.remove('activeCustom')})
     
-    anchor.classList.add('active'); 
+    anchor.classList.add('activeCustom'); 
 }
 
 
@@ -80,9 +81,26 @@ if (spies.length > 0){
     window.addEventListener('resize',debounce(function() {
        if(window.innerHeight !== windowH){
             observe(spies); 
-            windowH = window.innerHeight;
-            console.log("test")
+            windowH = window.innerHeight;            
         } 
 
         },500))
 }
+
+// NavBar transparent to dark
+
+let navBar = document.querySelector('.navbar');
+let rect = navBar.getBoundingClientRect();
+document.addEventListener('scroll',function(){
+    let positionToTop = document.documentElement.scrollTop + rect.top
+    console.log(positionToTop); 
+    if (positionToTop < 50){
+        
+        navBar.classList.remove('navBar');
+        
+    } else{
+        navBar.classList.add('navBar');
+    }
+
+})
+
