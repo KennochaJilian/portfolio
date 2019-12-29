@@ -39,7 +39,7 @@
 
 ?>
 
-<section class="row" id="skills">
+<section class="row" id="skills" data-spy>
 <a name="skills"></a>
     <div class=" d-flex flex-column align-items-center col-md-12">
         <div class="mb-5">

@@ -15,8 +15,8 @@ $projectTable = [
 ]
 ?>
 
-<section class="row p-auto" id="project">
-<a name="portfolio"></a>
+<section class="row p-auto" id="project" data-spy>
+<a name="project"></a>
     <div class=" d-flex flex-column align-items-center col-md-12">
         <div class="mb-5">
             <h2 class="category"> Portfolio </h2>

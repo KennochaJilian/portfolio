@@ -1,6 +1,9 @@
 *{
     font-family: 'ABeeZee', sans-serif;
 }
+html, body{
+    scroll-behavior:smooth;
+}
 
 .welcome{
     width: 100vw;
@@ -64,7 +67,7 @@ h2{
 .category{
     font-size: 50px; 
 }
-#about{
+#aboutMe{
     background-color:rgba(233,53,120,0.9); 
     padding:100px; 
    

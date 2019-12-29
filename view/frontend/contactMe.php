@@ -1,5 +1,5 @@
-<section class="row contact">
-    <a name="contact_me"></a>
+<section class="row contact" id="contactMe" data-spy>
+    <a name="contactMe"></a>
     <div class="col-md-12 mt-5">
         <h2 class="category"> Contactez-moi </h2>
         <hr class="line">
