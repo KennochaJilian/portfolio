@@ -9,7 +9,7 @@
             <p> Prête à partir à l'aventure et écrire ensemble une histoire partagée </p>
             </p>
         </div>
-        <div> <button class="btnWelcome btn-xl"> C'est parti ! </button> </div>
+        <div> <a href="#aboutMe"> <button class="btnWelcome btn-xl"> C'est parti ! </button> </a></div>
 
 
     </div>

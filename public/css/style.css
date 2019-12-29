@@ -2,7 +2,7 @@
     font-family: 'ABeeZee', sans-serif;
 }
 html, body{
-    scroll-behavior:smooth;
+    /* scroll-behavior:smooth; */
 }
 .navbar-default {
     -webkit-transition: all .35s;
@@ -50,7 +50,7 @@ html, body{
     font-weight: bold;
 } 
 h1{
-    font-size: 65px !important;
+    font-size: 5vw !important;
     font-weight:bold !important;
     text-align: center !important;
 }
@@ -100,7 +100,8 @@ h2{
 }
 #aboutMe{
     background-color:rgba(233,53,120,0.9); 
-    padding:100px; 
+    padding-top:15vh;
+    padding-bottom:15vh;
    
 
 
@@ -240,3 +241,28 @@ footer{
     background-repeat: no-repeat;
     background-position-x: center;
 }
+
+
+@media screen and (max-width: 990px) {
+    h1{
+        font-size:6vh!important;
+        font-weight: bold!important;
+    }
+    .navbar-default{
+        background-color: black!important;
+        color: white;
+
+    }
+    .navbar-default a{
+        color:white;    
+    }
+    #nameHeader{
+        color: #e93578!important;
+        
+    }
+    .welcome p{
+        font-size: 3vh;
+        font-weight: bolder!important;
+        text-align: center;
+    }
+  }

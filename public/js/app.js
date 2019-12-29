@@ -17,8 +17,7 @@ const activate = function (elem){
         }
     anchor.parentElement.parentElement
         .querySelectorAll('.activeCustom')
-        .forEach(node => {console.log(node); 
-            node.classList.remove('activeCustom')})
+        .forEach(node => {node.classList.remove('activeCustom')})
     
     anchor.classList.add('activeCustom'); 
 }
@@ -93,7 +92,6 @@ let navBar = document.querySelector('.navbar');
 let rect = navBar.getBoundingClientRect();
 document.addEventListener('scroll',function(){
     let positionToTop = document.documentElement.scrollTop + rect.top
-    console.log(positionToTop); 
     if (positionToTop < 50){
         
         navBar.classList.remove('navBar');
@@ -103,4 +101,34 @@ document.addEventListener('scroll',function(){
     }
 
 })
+
+
+// Scroll smooth :) 
+
+
+function scrollTo() {
+	const links = document.querySelectorAll('a');
+	links.forEach(each => (each.onclick = scrollAnchors));
+}
+
+function scrollAnchors(e, respond = null) {
+	const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+	e.preventDefault();
+	var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+	const targetAnchor = document.querySelector(targetID);
+	if (!targetAnchor) return;
+	const originalTop = distanceToTop(targetAnchor);
+	window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+	const checkIfDone = setInterval(function() {
+		const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+		if (distanceToTop(targetAnchor) === 0 || atBottom) {
+			targetAnchor.tabIndex = '-1';
+			targetAnchor.focus();
+			window.history.pushState('', '', targetID);
+			clearInterval(checkIfDone);
+		}
+	}, 100);
+}
+
+scrollTo()
 
