@@ -10,7 +10,10 @@ let observer = null
  */
 
 const activate = function (elem){
+    
     const id = elem.getAttribute('id');
+    console.log(id);
+   
     const anchor = document.querySelector(`a[href="#${id}"]`)
         if(anchor === null){
             return null
@@ -19,6 +22,10 @@ const activate = function (elem){
         .querySelectorAll('.activeCustom')
         .forEach(node => {node.classList.remove('activeCustom')})
     
+    if(id == 'header'){
+        console.log("passage en if header");
+        return
+    }
     anchor.classList.add('activeCustom'); 
 }
 
@@ -31,6 +38,7 @@ const activate = function (elem){
 const callback = function(entries){
     entries.forEach(function (entry){
         if (entry.isIntersecting){
+            //console.log(entry); 
             activate(entry.target);
         }
     } )

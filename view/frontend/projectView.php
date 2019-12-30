@@ -1,3 +1,6 @@
+<?php     
+$technos = explode(' ', $projectInfo['technos']);
+?>
 <div class="d-flex justify-content-around projectView ">
     <div class="ajcol">
         <img src="<?= $projectInfo['imgSRC'] ?>">
@@ -6,10 +9,18 @@
         <div class="fiche">
             <h2> <?= $projectInfo['title'] ?> </h2>
             <p class="text-justify"><?= $projectInfo['descriptionMax'] ?> </p>
-            <p class="text-justify"> La mission: </p>
-            <p> <?= $projectInfo['mission']?> </p>
-            <p> Technologies utilisées </p>
-            <p> <?= $projectInfo['technos'] ?> </p>
+            <h3> La mission: </h3>
+            <p class="text-justify"> <?= $projectInfo['mission']?> </p>
+            <h3> Technologies utilisées : </h3>
+                <ul> 
+                <?php 
+                 foreach($technos as $techno){ ?>
+                    <li> <?=$techno ?></li>
+
+                 <?php } ?>
+
+                </ul>
+           
 
         </div>
 

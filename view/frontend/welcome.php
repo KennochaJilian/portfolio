@@ -1,4 +1,5 @@
-<div class="row">
+<header class="row" data-spy id="header">
+<a name="header"></a>
     <div class="welcome d-flex flex-column justify-content-center align-items-center">
 
         <div>
@@ -9,8 +10,8 @@
             <p> Prête à partir à l'aventure et écrire ensemble une histoire partagée </p>
             </p>
         </div>
-        <div> <a href="#aboutMe"> <button class="btnWelcome btn-xl"> C'est parti ! </button> </a></div>
+        <div> <a href="#aboutMe" class="scroll"> <button class="btnWelcome btn-xl"> C'est parti ! </button> </a></div>
 
 
     </div>
-</div>
+</header>

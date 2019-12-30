@@ -60,7 +60,7 @@
             </div>
             <div class="d-flex justify-content-center mb-4">
                 <div>
-                    <button type="submit" class="btnContact">Envoyer</button>
+                    <button type="submit" class="btnContact btn-xl ">Envoyer</button>
                 </div>
             </div>
         </form>

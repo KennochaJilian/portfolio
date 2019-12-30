@@ -1,20 +1,4 @@
-<?php
-//print_r($projectTable);
-// $projectTable = [ 
-//     [
-//         "description" => "Réalisation d'un portfolio en Bootstrap",
-//         "imgSRC" =>"img/lisch.jpg"
-//     ],
-//     [
-//         "description" => "Bomberman en canvas/JS réalisé en équipe de quatre personnes",
-//         "imgSRC" => "img/bomberman.jpg"
-//     ],
-//     [
-//         "description" => "Interface de présentation pour l'inauguration de l'Access Code School de Strasbourg",
-//         "imgSRC"=>"img/openning.jpeg"
-//     ]
-// ]
-?>
+
 
 <section class="row p-auto" id="project" data-spy>
 <a name="project"></a>
