@@ -13,7 +13,7 @@
     </div>
     <div class="d-flex"> 
         <a href="#skills"> <button class=" btnDark mPerso mr-2"> Mes Compétences </button> </a>
-        <a href=""> <button class=" btnDark mPerso"> Télécharger mon CV </button> </a>
+        <a href="../../test.txt"> <button class=" btnDark mPerso"> Télécharger mon CV </button> </a>
     </div>
 
 </section>
