@@ -1,9 +1,7 @@
 *{
     font-family: 'ABeeZee', sans-serif;
 }
-html, body{
-    /* scroll-behavior:smooth; */
-}
+
 .navbar-default {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -186,6 +184,10 @@ h2{
     max-width: 800px;
 
 
+}
+.imgProjectHover{
+    opacity:0.8;
+    transition: opacity 0.9s ;
 }
 .ajcol{
     width:50%;

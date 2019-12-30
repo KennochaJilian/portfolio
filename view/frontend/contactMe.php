@@ -26,7 +26,7 @@
 
 
     <div class="col-md-12 mt-3">
-        <form action="index.php?action=newMsg#contact_me" method="post">
+        <form action="?action=newMsg#contactMe" method="post">
             <div class="row mb-3">
                 <div class="col-lg-4 offset-lg-2 col-sm-10">
 

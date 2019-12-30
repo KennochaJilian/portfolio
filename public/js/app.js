@@ -10,7 +10,7 @@ let observer = null
  */
 
 const activate = function (elem){
-    
+
     const id = elem.getAttribute('id');
     console.log(id);
    
@@ -154,6 +154,25 @@ $(document).ready(function() {
 	});
 	
 });
+
+
+// Hover on div project
+
+
+// let projectTables = document.querySelectorAll(".projectTable");
+// console.log(projectTables);
+// projectTables.forEach(project => function(){
+//     console.log("passage en for Each")
+//     project.addEventListener("mouseover",function(){
+//         this.classList.add("imgProjectHover");
+//     }) 
+//     project.addEventListener("mouseout",function(){
+//      this.classList.remove("imgProjectHover");
+// });
+// })
+
+
+
 
 
 
