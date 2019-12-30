@@ -1,18 +1,19 @@
 <?php
-$projectTable = [ 
-    [
-        "description" => "Réalisation d'un portfolio en Bootstrap",
-        "imgSRC" =>"img/lisch.jpg"
-    ],
-    [
-        "description" => "Bomberman en canvas/JS réalisé en équipe de quatre personnes",
-        "imgSRC" => "img/bomberman.jpg"
-    ],
-    [
-        "description" => "Interface de présentation pour l'inauguration de l'Access Code School de Strasbourg",
-        "imgSRC"=>"img/openning.jpeg"
-    ]
-]
+//print_r($projectTable);
+// $projectTable = [ 
+//     [
+//         "description" => "Réalisation d'un portfolio en Bootstrap",
+//         "imgSRC" =>"img/lisch.jpg"
+//     ],
+//     [
+//         "description" => "Bomberman en canvas/JS réalisé en équipe de quatre personnes",
+//         "imgSRC" => "img/bomberman.jpg"
+//     ],
+//     [
+//         "description" => "Interface de présentation pour l'inauguration de l'Access Code School de Strasbourg",
+//         "imgSRC"=>"img/openning.jpeg"
+//     ]
+// ]
 ?>
 
 <section class="row p-auto" id="project" data-spy>
@@ -32,18 +33,18 @@ $projectTable = [
         <div class="row">
             <?php 
             foreach($projectTable as $project){ ?>
-            <div class="col-xl-5 col-sm-12 col-xs-12 mt-3 mx-auto projectTable">
+            <div class="col-xl-5 col-sm-12 col-xs-12 mt-3 mx-auto projectTable" id=<?=$project['id']?>>
                 <img src=<?= $project['imgSRC']?>>
                 
                 <div class="pl-2">
-                    <p> <?= $project['description']?></p>
+                    <p> <?= $project['descriptionMin']?></p>
                 </div>
 
             </div>
             <?php } ?>
-
+        </div>
     </aside>
-
+    <div class="col-md-12 " id="projectView"></div>
 
 
 </section>

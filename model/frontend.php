@@ -14,10 +14,25 @@ function dbConnect(){
 }
 
 function newMsgAdded(){
+    $db = dbConnect(); 
+    $req = $db->prepare("INSERT INTO msg (optionMsg,name, email, content, creation_date) VALUE (?,?,?,?, now())");
+    $req ->execute(array($_POST['optionMsg'],$_POST['name'], $_POST['email'],$_POST['content']));
     
-    
-        $db = dbConnect(); 
-        $req = $db->prepare("INSERT INTO msg (optionMsg,name, email, content, creation_date) VALUE (?,?,?,?, now())");
-        $req ->execute(array($_POST['optionMsg'],$_POST['name'], $_POST['email'],$_POST['content']));
-    
+}
+function projectsAllView(){
+    $db = dbConnect(); 
+    $req = $db->prepare("SELECT * FROM project");
+    $req ->execute(); 
+    $projectAllInfos = $req->fetchAll();
+    return $projectAllInfos; 
+}
+
+function projectViewInfos($id){
+    $db = dbConnect(); 
+    $req = $db->prepare("SELECT * FROM project WHERE id = ? ");
+    $req ->execute(array($id));
+    $projectInfo = $req->fetch();
+
+    return $projectInfo;
+
 }

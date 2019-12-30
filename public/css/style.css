@@ -175,6 +175,15 @@ h2{
     border-top-right-radius: 35px;
     
 }
+.projectView{
+    z-index: 1; 
+    position: absolute;
+    top: 50vh;
+    border: 2px solid red; 
+
+}
+
+
 
 
  .contact{

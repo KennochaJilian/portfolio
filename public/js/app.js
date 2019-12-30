@@ -131,4 +131,32 @@ function scrollAnchors(e, respond = null) {
 }
 
 scrollTo()
+// Pop-Up project
+
+// Ajax Portfolio
+projects = document.querySelectorAll(".projectTable");
+console.log(projects);
+projects.forEach( project => project.onclick = function(){
+    id = project.getAttribute('id'); 
+
+    axios.get(`index.php?action=projectView&id=${id}`)
+  .then(function (response) {
+    // handle success
+    console.log(response);
+    divHidden = document.querySelector("#projectView"); 
+    divHidden.innerHTML = response.data; 
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .finally(function () {
+    // always executed
+  });
+})
+
+
+
+
+
 
