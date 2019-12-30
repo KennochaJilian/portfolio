@@ -14,6 +14,9 @@ html, body{
     color: black!important; 
 }
 
+.mbPerso{
+    margin-bottom: 10vh; 
+}
 .navbar-default a{
     color: rgb(53, 53, 53);    
 }
@@ -176,12 +179,23 @@ h2{
     
 }
 .projectView{
-    z-index: 1; 
-    position: absolute;
-    top: 50vh;
-    border: 2px solid red; 
+    margin: 1vw auto;
+    background: #FFF;
+    padding: 1vw;
+    border: 5px solid #e93578;
+    max-width: 800px;
+
 
 }
+.ajcol{
+    width:50%;
+    padding: 1vw; 
+}
+.ajcol img{
+    width:100%; 
+    height: auto;
+}
+
 
 
 
@@ -250,6 +264,9 @@ footer{
     background-repeat: no-repeat;
     background-position-x: center;
 }
+
+
+
 
 
 @media screen and (max-width: 990px) {

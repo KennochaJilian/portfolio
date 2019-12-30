@@ -8,16 +8,16 @@
     <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#aboutMe">À propos <span class="sr-only">(current)</span></a>
+                <a class="nav-link scroll" href="#aboutMe">À propos <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#skills">Mes compétences</a>
+                <a class="nav-link scroll" href="#skills">Mes compétences</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#project">Portfolio</a>
+                <a class="nav-link scroll" href="#project">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contactMe">Me Contacter</a>
+                <a class="nav-link scroll" href="#contactMe">Me Contacter</a>
             </li>
            
         </ul>

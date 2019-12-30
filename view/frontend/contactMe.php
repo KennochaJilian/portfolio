@@ -5,7 +5,7 @@
         <hr class="line">
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-12 mt-3">
         <p class="text-center"> Vous désirez plus d'information me concernant, ou vous souhaitez échanger avec moi?
             Envoyez moi un message et je je vous répondrai avec plaisir ! </p>
     </div>
@@ -25,7 +25,7 @@
 
 
 
-    <div class="col-md-12">
+    <div class="col-md-12 mt-3">
         <form action="index.php?action=newMsg#contact_me" method="post">
             <div class="row mb-3">
                 <div class="col-lg-4 offset-lg-2 col-sm-10">
@@ -68,7 +68,7 @@
 
 
 
-    <div class="col-lg-12 mb-5">
+    <div class="col-lg-12 mbPerso">
         <div class="d-flex justify-content-center">
             <div class="icone mx-2"> <a href=""> <i class="  fab fa-linkedin-in"></i> </a> </div>
             <div class="icone mx-2"> <a href=""> <i class="  fab fa-github"></i> </a> </div>

@@ -107,7 +107,7 @@ document.addEventListener('scroll',function(){
 
 
 function scrollTo() {
-	const links = document.querySelectorAll('a');
+	const links = document.querySelectorAll('.scroll');
 	links.forEach(each => (each.onclick = scrollAnchors));
 }
 
@@ -130,30 +130,23 @@ function scrollAnchors(e, respond = null) {
 	}, 100);
 }
 
-scrollTo()
-// Pop-Up project
+ scrollTo()
 
-// Ajax Portfolio
-projects = document.querySelectorAll(".projectTable");
-console.log(projects);
-projects.forEach( project => project.onclick = function(){
-    id = project.getAttribute('id'); 
 
-    axios.get(`index.php?action=projectView&id=${id}`)
-  .then(function (response) {
-    // handle success
-    console.log(response);
-    divHidden = document.querySelector("#projectView"); 
-    divHidden.innerHTML = response.data; 
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .finally(function () {
-    // always executed
-  });
-})
+$(document).ready(function() {
+
+	$('.simple-ajax-popup-align-top').magnificPopup({
+		type: 'ajax',
+		alignTop: true,
+		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+	});
+
+	$('.simple-ajax-popup').magnificPopup({
+		type: 'ajax'
+	});
+	
+});
+
 
 
 

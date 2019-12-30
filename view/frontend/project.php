@@ -33,14 +33,15 @@
         <div class="row">
             <?php 
             foreach($projectTable as $project){ ?>
+            
             <div class="col-xl-5 col-sm-12 col-xs-12 mt-3 mx-auto projectTable" id=<?=$project['id']?>>
-                <img src=<?= $project['imgSRC']?>>
+            <a class="simple-ajax-popup-align-top" href='index.php?action=projectView&id=<?=$project['id']?>'> <img src=<?= $project['imgSRC']?>> </a>
                 
                 <div class="pl-2">
                     <p> <?= $project['descriptionMin']?></p>
                 </div>
 
-            </div>
+            </div> 
             <?php } ?>
         </div>
     </aside>
