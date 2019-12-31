@@ -12,7 +12,7 @@ let observer = null
 const activate = function (elem){
 
     const id = elem.getAttribute('id');
-    console.log(id);
+ 
    
     const anchor = document.querySelector(`a[href="#${id}"]`)
         if(anchor === null){
@@ -159,17 +159,20 @@ $(document).ready(function() {
 // Hover on div project
 
 
-// let projectTables = document.querySelectorAll(".projectTable");
-// console.log(projectTables);
-// projectTables.forEach(project => function(){
-//     console.log("passage en for Each")
-//     project.addEventListener("mouseover",function(){
-//         this.classList.add("imgProjectHover");
-//     }) 
-//     project.addEventListener("mouseout",function(){
-//      this.classList.remove("imgProjectHover");
-// });
-// })
+let projectTables = document.getElementsByClassName("projectTable");
+let projectTablesHover = document.getElementsByClassName("imgProjectHover");
+ 
+for (i =0 ; i< projectTablesHover.length; i++){
+
+    projectTablesHover[i].addEventListener("mouseover",function(){
+        console.log("passage en mouseover")
+       this.style.zindex="1";
+    }) 
+    projectTablesHover[i].addEventListener("mouseout",function(){
+        console.log("passage en mouse out")
+        this.style.zindex="-1";
+});
+}
 
 
 
