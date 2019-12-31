@@ -1,7 +1,7 @@
 <?php     
 $technos = explode(' ', $projectInfo['technos']);
 ?>
-<div class="d-flex justify-content-around projectView ">
+<div class="d-flex justify-content-around flex-wrap projectView ">
     <div class="ajcol">
         <img src="<?= $projectInfo['imgSRC'] ?>">
     </div>

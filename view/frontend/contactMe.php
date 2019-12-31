@@ -27,8 +27,8 @@
 
     <div class="col-md-12 mt-3">
         <form action="?action=newMsg#contactMe" method="post">
-            <div class="row mb-3">
-                <div class="col-lg-4 offset-lg-2 col-sm-10">
+            <div class="d-flex justify-content-around mb-3 flex-wrap">
+                <div class="formCol">
 
                     <div class="form-group field">
                         <input required type="text" name="name" class="form-control field" id="inputname"
@@ -51,7 +51,7 @@
 
                 </div>
 
-                <div class="col-lg-4 col-sm-10">
+                <div class="formCol">
                     <div class="form-group field">
                         <textarea id="contact_form_message" name="content" required="required"
                             placeholder="Votre message" rows="5" class="form-control field"></textarea>
@@ -70,10 +70,10 @@
 
     <div class="col-lg-12 mbPerso">
         <div class="d-flex justify-content-center">
-            <div class="icone mx-2"> <a href=""> <i class="  fab fa-linkedin-in"></i> </a> </div>
-            <div class="icone mx-2"> <a href=""> <i class="  fab fa-github"></i> </a> </div>
-            <div class="icone mx-2"> <a href=""> <i class=" fab fa-twitter"></i> </a> </div>
-            <div class="icone mx-2"> <a href=""> <i class=" far fa-envelope"></i> </a> </div>
+            <div class="icone mx-2"> <a href="https://www.linkedin.com/in/aranxa-codina-275959186/"> <i class="  fab fa-linkedin-in"></i> </a> </div>
+            <div class="icone mx-2"> <a href="https://github.com/KennochaJilian"> <i class="  fab fa-github"></i> </a> </div>
+            <div class="icone mx-2"> <a href="tel:0681179825"> <i class="fas fa-phone"></i> </a> </div>
+            <div class="icone mx-2"> <a href="mailto:codinaaranxa@gmail.com"> <i class=" far fa-envelope"></i> </a> </div>
         </div>
     </div>
 </section>

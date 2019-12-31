@@ -139,9 +139,19 @@ h2{
 }
 .skillsTable{
     background-color: #631878;
+    border-radius: 35px;
+    height:90%;
+}
+.skillsTable h3{
+    font-size: 155%;
+    font-weight:bold; 
+}
+.divImgSkills{
+    width: 50%; 
+    padding: 1vw; 
 }
 .imgSkill{
-    width:5vw !important;
+    width:100% !important;
 }
 
 #project{
@@ -221,6 +231,13 @@ h2{
     border-radius: 27px;
     border: none;  
 
+
+}
+
+
+.formCol{
+    width:40%;
+   
 }
 
 .field{
@@ -267,14 +284,14 @@ footer{
 }
 
 
-
-
-
 @media screen and (max-width: 990px) {
     h1{
         font-size:6vh!important;
         font-weight: bold!important;
     }
+    /* .skillsTable h3{
+        font-size: 4vw;
+    } */
     .navbar-default{
         background-color: black!important;
         color: white;
@@ -292,4 +309,31 @@ footer{
         font-weight: bolder!important;
         text-align: center;
     }
+    
+     .divImgSkills{
+        padding: 4vw; 
+    
+    
+
+  }
+}
+
+  @media screen and (max-width: 575px){
+    /* .skillsTable h3{
+        font-size: 8vw;
+    } */
+    .divImgSkills{
+       padding: 6.5vw; 
+    }
+    .formCol{
+        width:80%;
+       
+    }
+    .ajcol{
+        width:80%;
+        padding: 1vw; 
+    }
+    
+    
+   
   }

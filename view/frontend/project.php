@@ -22,7 +22,7 @@
             <a class="simple-ajax-popup-align-top" href='index.php?action=projectView&id=<?=$project['id']?>'> <img src=<?= $project['imgSRC']?>> </a>
                 
                 <div class="pl-2">
-                    <p> <?= $project['descriptionMin']?></p>
+                    <p class="text-center"> <?= $project['descriptionMin']?></p>
                 </div>
 
             </div> 
