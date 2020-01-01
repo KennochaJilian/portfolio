@@ -23,7 +23,6 @@ const activate = function (elem){
         .forEach(node => {node.classList.remove('activeCustom')})
     
     if(id == 'header'){
-        console.log("passage en if header");
         return
     }
     anchor.classList.add('activeCustom'); 
@@ -160,17 +159,18 @@ $(document).ready(function() {
 
 
 let projectTables = document.getElementsByClassName("projectTable");
-let projectTablesHover = document.getElementsByClassName("imgProjectHover");
- 
-for (i =0 ; i< projectTablesHover.length; i++){
 
-    projectTablesHover[i].addEventListener("mouseover",function(){
-        console.log("passage en mouseover")
-       this.style.zindex="1";
+ 
+for (i =0 ; i< projectTables.length; i++){
+
+    projectTables[i].addEventListener("mouseover",function(){
+        this.firstChild.classList.add("imgProjectHover"); 
+        this.firstChild.firstChild.style.display = "flex";
+        
     }) 
-    projectTablesHover[i].addEventListener("mouseout",function(){
-        console.log("passage en mouse out")
-        this.style.zindex="-1";
+    projectTables[i].addEventListener("mouseout",function(){
+        this.firstChild.classList.remove("imgProjectHover");    this.firstChild.firstChild.style.display = "none";     
+        
 });
 }
 

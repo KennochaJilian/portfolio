@@ -1,7 +1,5 @@
-
-
 <section class="row p-auto" id="project" data-spy>
-<a name="project"></a>
+    <a name="project"></a>
     <div class=" d-flex flex-column align-items-center col-md-12">
         <div class="mb-5">
             <h2 class="category"> Portfolio </h2>
@@ -17,20 +15,23 @@
         <div class="row">
             <?php 
             foreach($projectTable as $project){ ?>
-            
-            <div class="col-xl-5 col-sm-12 col-xs-12 mt-3 mx-auto projectTable" id=<?=$project['id']?>>
-            <div class="imgProjectHover"> 
-              <div>  <p class=" display-1"> + </p> </div>
-            </div> 
 
-            <a class="simple-ajax-popup-align-top" href='index.php?action=projectView&id=<?=$project['id']?>'> <img src=<?= $project['imgSRC']?>> </a>
-                
+            <div class="col-xl-5 col-sm-12 col-xs-12 mt-3 mx-auto projectTable" id=<?=$project['id']?>><a
+                    class="simple-ajax-popup-align-top" href='index.php?action=projectView&id=<?=$project['id']?>'><div class="hoverDefault">
+                        <div>
+                            <p class=" display-1"> + </p>
+                        </div>
+                    </div>
+                </a>
+
+                <img src=<?= $project['imgSRC']?>>
+
                 <div class="pl-2">
                     <p class="text-center"> <?= $project['descriptionMin']?></p>
                 </div>
 
-            
-            </div> 
+
+            </div>
             <?php } ?>
         </div>
     </aside>
