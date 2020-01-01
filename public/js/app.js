@@ -174,6 +174,31 @@ for (i =0 ; i< projectTables.length; i++){
 });
 }
 
+// API Intersector
+const ratioBtn = .1;
+const optionsBtn = {
+  root: null,
+  rootMargin: '0px',
+  threshold: ratioBtn
+};
+var i = 0;
+var width = 1;
+
+const handleIntersect = function(entries,observer){
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratioBtn){
+      entry.target.classList.add('reveal-visible')
+      observer.unobserve(entry.target) 
+    } 
+  })
+}
+const observerBtn = new IntersectionObserver(handleIntersect, optionsBtn);
+document.querySelectorAll('[class*="reveal-"]').forEach(function(r){
+  observerBtn.observe(r)
+})
+
+
+
 
 
 

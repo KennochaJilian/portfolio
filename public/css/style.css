@@ -307,6 +307,24 @@ footer{
     background-position-x: center;
 }
 
+/* REVEAL JS */
+
+[class*="reveal-"]{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.5s cubic-bezier(.54,.01,0,.99);
+   
+}
+.reveal-2{
+    transition-delay: .1s;
+}
+  
+ 
+
 
 @media screen and (max-width: 990px) {
     h1{

@@ -12,8 +12,8 @@
             rerum eaque.</p>
     </div>
     <div class="d-flex"> 
-        <a class ="scroll" href="#skills"> <button class=" btnDark mPerso mr-2"> Mes Compétences </button> </a>
-        <a href="https://1drv.ms/b/s!AjFBv6vCbVRpx3KRQz2o0Ji-MH2C"> <button class=" btnDark mPerso"> Télécharger mon CV </button> </a>
+        <a class ="scroll" href="#skills"> <button class="reveal-1 btnDark mPerso mr-2"> Mes Compétences </button> </a>
+        <a href="https://1drv.ms/b/s!AjFBv6vCbVRpx3KRQz2o0Ji-MH2C"> <button class=" reveal-2 btnDark mPerso"> Télécharger mon CV </button> </a>
     </div>
 
 </section>

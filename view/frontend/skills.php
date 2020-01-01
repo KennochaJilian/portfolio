@@ -51,13 +51,13 @@
         <div class="row">
             <?php 
             foreach($skillsTable as $skill){ ?>
-            <div class="col-xl-2 mx-auto col-sm-6 col-xs-12 mb-5">
-                <div class="skillsTable p-2">
+            <div class="col-xl-2 mx-auto col-sm-6 col-xs-12 mb-5 ">
+                <div class="skillsTable p-2 reveal-1">
                     <div>
                         <h3 class="text-center"> <?= $skill['title']?></h3>
                     </div>
                     
-                    <div class=" skillsDiv p-3 d-flex justify-content-around flex-wrap">
+                    <div class=" reveal-2 skillsDiv p-3 d-flex justify-content-around flex-wrap">
                         <?php
                     foreach($skill['imgSRC'] as $imgSrc){ ?>
                         <div class="divImgSkills"> <img class="imgSkill img-responsive" src=<?=$imgSrc?>> </div>
