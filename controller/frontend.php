@@ -34,3 +34,7 @@ function projectView(){
     $projectInfo = projectViewInfos($_GET['id']);
     require('view/frontend/projectView.php');
 }
+
+function mentionsView(){
+  require('view/frontend/mentions.php');
+}

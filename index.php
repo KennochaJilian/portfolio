@@ -6,6 +6,8 @@
             newMsg();   
         } elseif($_GET['action'] == 'projectView'){
             projectView(); 
+        } elseif($_GET['action'] == 'mentions'){
+            mentionsView(); 
         }
     }else{
 

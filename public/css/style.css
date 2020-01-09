@@ -294,6 +294,16 @@ h2{
 footer{
     height:4vh;
 }
+footer a{
+    font-size:10px !important;
+    text-decoration: none !important;
+    color: white !important; 
+}
+footer a:hover{
+    text-decoration: none !important; 
+    color: white !important; 
+
+}
 .copyright{
     font-size:10px; 
 }
