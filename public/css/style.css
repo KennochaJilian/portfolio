@@ -118,9 +118,9 @@ h2{
     
 
 }
-.description{
+/* .description{
     width: 50vw; 
-}
+} */
 .mPerso{
     margin-top: 40px;
 }
@@ -334,7 +334,9 @@ footer a:hover{
     transition-delay: .1s;
 }
   
- 
+.text-skill{
+    color: white!important; 
+}
 
 
 @media screen and (max-width: 990px) {

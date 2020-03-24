@@ -5,11 +5,13 @@
         <h2 class="category"> À propos </h2>
         <hr class="line">
     </div>
-    <div class="description">
-        <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum aperiam ipsam
-            doloremque in
-            tempora cupiditate atque tenetur. Esse earum illum non explicabo voluptatum ipsa possimus, mollitia odit
-            rerum eaque.</p>
+    <div class="description mx-auto d-flex justify-content-around ">
+    
+    <div class="w-50">
+    
+    <p class="text-center"> Passionnée par les nouvelles technologies, exigeante et perfectionniste, je me suis tournée vers le monde du développement web afin de m'épanouir professionnellement. Je suis très enthousiaste à travailler en équipe pour toujours évoluer positivement, et grandir aux contacts des autres. C’est en ce sens que je suis prête à partir à l’aventure et écrire une histoire partagée avec vous ! </p>
+    </div>
+        
     </div>
     <div class="d-flex"> 
         <a class ="scroll" href="#skills"> <button class="reveal-1 btnDark mPerso mr-2"> Mes Compétences </button> </a>

@@ -6,7 +6,7 @@
     </div>
 
     <div class="col-md-12 mt-3">
-        <p class="text-center"> Vous désirez plus d'information me concernant, ou vous souhaitez échanger avec moi?
+        <p class="text-center"> Vous désirez plus d'information me concernant, ou vous souhaitez échanger avec moi ?
             Envoyez moi un message et je je vous répondrai avec plaisir ! </p>
     </div>
 
